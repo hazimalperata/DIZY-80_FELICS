@@ -1,0 +1,121 @@
+Building for PC ...
+Building with DEBUG flag NOT set ...
+Building with SCENARIO flag set to 0 ...
+Building with MEASURE_CYCLE_COUNT flag NOT set ...
+Building with COMPILER_OPTIONS flag set to -O3 ...
+---------- Start building DIZY-80_120_80_80_v01 ----------
+gcc -c -g -fdata-sections -ffunction-sections -Wcast-align -Wsign-compare -Waggregate-return -Wunused -Wfatal-errors -Wl,--gc-sections -Wl,--relax -I../../../../../common/source/pc/include -D PC -D SCENARIO=0 -O3 constants.c -I./../source -I./../../../common -I./../../../../../common/source/rotations -o ./../build/constants.o
+gcc -c -g -fdata-sections -ffunction-sections -Wcast-align -Wsign-compare -Waggregate-return -Wunused -Wfatal-errors -Wl,--gc-sections -Wl,--relax -I../../../../../common/source/pc/include -D PC -D SCENARIO=0 -O3 encrypt.c -I./../source -I./../../../common -I./../../../../../common/source/rotations -o ./../build/encrypt.o
+gcc -c -g -fdata-sections -ffunction-sections -Wcast-align -Wsign-compare -Waggregate-return -Wunused -Wfatal-errors -Wl,--gc-sections -Wl,--relax -I../../../../../common/source/pc/include -D PC -D SCENARIO=0 -O3 setup.c -I./../source -I./../../../common -I./../../../../../common/source/rotations -o ./../build/setup.o
+gcc -c -g -fdata-sections -ffunction-sections -Wcast-align -Wsign-compare -Waggregate-return -Wunused -Wfatal-errors -Wl,--gc-sections -Wl,--relax -I../../../../../common/source/pc/include -D PC -D SCENARIO=0 -O3 test_vectors.c -I./../source -I./../../../common -I./../../../../../common/source/rotations -o ./../build/test_vectors.o
+test_vectors.c:42:78: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                              ^~~~
+test_vectors.c:42:78: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:42:84: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                    ^~~~
+test_vectors.c:42:84: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:42:90: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                          ^~~~
+test_vectors.c:42:90: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:42:96: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                ^~~~
+test_vectors.c:42:96: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:42:102: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                      ^~~~
+test_vectors.c:42:102: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:42:108: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                            ^~~~
+test_vectors.c:42:108: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:42:114: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                  ^~~~
+test_vectors.c:42:114: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:42:120: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                        ^~~~
+test_vectors.c:42:120: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:42:126: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                              ^~~~
+test_vectors.c:42:126: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:42:132: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                                    ^~~~
+test_vectors.c:42:132: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:42:138: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                                          ^~~~
+test_vectors.c:42:138: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:42:144: warning: excess elements in array initializer
+   42 | const uint8_t expectedPlaintext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                                                ^~~~
+test_vectors.c:42:144: note: (near initialization for ‘expectedPlaintext’)
+test_vectors.c:43:79: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                               ^~~~
+test_vectors.c:43:79: note: (near initialization for ‘expectedCiphertext’)
+test_vectors.c:43:85: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                     ^~~~
+test_vectors.c:43:85: note: (near initialization for ‘expectedCiphertext’)
+test_vectors.c:43:91: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                           ^~~~
+test_vectors.c:43:91: note: (near initialization for ‘expectedCiphertext’)
+test_vectors.c:43:97: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                 ^~~~
+test_vectors.c:43:97: note: (near initialization for ‘expectedCiphertext’)
+test_vectors.c:43:103: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                       ^~~~
+test_vectors.c:43:103: note: (near initialization for ‘expectedCiphertext’)
+test_vectors.c:43:109: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                             ^~~~
+test_vectors.c:43:109: note: (near initialization for ‘expectedCiphertext’)
+test_vectors.c:43:115: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                   ^~~~
+test_vectors.c:43:115: note: (near initialization for ‘expectedCiphertext’)
+test_vectors.c:43:121: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                         ^~~~
+test_vectors.c:43:121: note: (near initialization for ‘expectedCiphertext’)
+test_vectors.c:43:127: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                               ^~~~
+test_vectors.c:43:127: note: (near initialization for ‘expectedCiphertext’)
+test_vectors.c:43:133: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                                     ^~~~
+test_vectors.c:43:133: note: (near initialization for ‘expectedCiphertext’)
+test_vectors.c:43:139: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                                           ^~~~
+test_vectors.c:43:139: note: (near initialization for ‘expectedCiphertext’)
+test_vectors.c:43:145: warning: excess elements in array initializer
+   43 | const uint8_t expectedCiphertext[TEST_STREAM_SIZE] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
+      |                                                                                                                                                 ^~~~
+test_vectors.c:43:145: note: (near initialization for ‘expectedCiphertext’)
+gcc -c -g -fdata-sections -ffunction-sections -Wcast-align -Wsign-compare -Waggregate-return -Wunused -Wfatal-errors -Wl,--gc-sections -Wl,--relax -I../../../../../common/source/pc/include -D PC -D SCENARIO=0 -O3 update.c -I./../source -I./../../../common -I./../../../../../common/source/rotations -o ./../build/update.o
+gcc -c -g -fdata-sections -ffunction-sections -Wcast-align -Wsign-compare -Waggregate-return -Wunused -Wfatal-errors -Wl,--gc-sections -Wl,--relax -I../../../../../common/source/pc/include -D PC -D SCENARIO=0 -O3 ../../../common/main.c -I./../source -I./../../../common -I./../../../../../common/source/rotations -o ./../build/main.o
+gcc -c -g -fdata-sections -ffunction-sections -Wcast-align -Wsign-compare -Waggregate-return -Wunused -Wfatal-errors -Wl,--gc-sections -Wl,--relax -I../../../../../common/source/pc/include -D PC -D SCENARIO=0 -O3 ../../../common/common.c -I./../source -I./../../../common -I./../../../../../common/source/rotations -o ./../build/common.o
+gcc -g -fdata-sections -ffunction-sections -Wcast-align -Wsign-compare -Waggregate-return -Wunused -Wfatal-errors -Wl,--gc-sections -Wl,--relax -I../../../../../common/source/pc/include ./../build/constants.o ./../build/encrypt.o ./../build/setup.o ./../build/test_vectors.o ./../build/update.o \
+	./../build/main.o ./../build/common.o \
+	 -o ./../build/cipher.elf
+objdump -dSt ./../build/cipher.elf > ./../build/cipher.lst
+objdump -dSt ./../build/constants.o > ./../build/constants.lst
+objdump -dSt ./../build/encrypt.o > ./../build/encrypt.lst
+objdump -dSt ./../build/setup.o > ./../build/setup.lst
+objdump -dSt ./../build/test_vectors.o > ./../build/test_vectors.lst
+objdump -dSt ./../build/update.o > ./../build/update.lst
+objdump -dSt ./../build/main.o > ./../build/main.lst
+objdump -dSt ./../build/common.o > ./../build/common.lst
+---------- End building DIZY-80_120_80_80_v01 ----------
