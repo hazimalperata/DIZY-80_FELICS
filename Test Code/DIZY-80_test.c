@@ -201,7 +201,7 @@ void shifting_dizy80(unsigned char *temp5) {
     temp5[20] = temp[8];
 }
 
-void sboxes_to_state(unsigned char *sboxes, unsigned char[] states) {
+void sboxes_to_state(unsigned char *sboxes, unsigned char *states) {
     int i;
     for (i = 0; i < 3; ++i) {
         states[i] = (sboxes[i] << 3) + (sboxes[i + 1] >> 2);
